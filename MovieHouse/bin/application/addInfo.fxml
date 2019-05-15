@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="534.0" prefWidth="542.0" style="-fx-background-color: #255;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.addInfoController">
+   <children>
+      <Label fx:id="fill1" layoutX="41.0" layoutY="98.0" text="Movie Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="fill2" layoutX="42.0" layoutY="165.0" text="Genre" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="fill3" layoutX="41.0" layoutY="228.0" text="Price" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="fill4" layoutX="39.0" layoutY="293.0" text="IMDB" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="48.0" layoutY="479.0" mnemonicParsing="false" onAction="#addDetails" prefHeight="25.0" prefWidth="114.0" style="-fx-background-radius: 0;" styleClass="my-button" text="Add" />
+      <TextField fx:id="moviename" layoutX="41.0" layoutY="128.0" prefHeight="25.0" prefWidth="128.0" style="-fx-background-radius: 0;" AnchorPane.rightAnchor="374.0" />
+      <TextField fx:id="genre" layoutX="41.0" layoutY="193.0" prefHeight="25.0" prefWidth="128.0" style="-fx-background-radius: 0;" AnchorPane.rightAnchor="374.0" />
+      <TextField fx:id="price" layoutX="41.0" layoutY="255.0" prefHeight="25.0" prefWidth="128.0" style="-fx-background-radius: 0;" AnchorPane.rightAnchor="374.0" />
+      <TextField fx:id="imdb" layoutX="41.0" layoutY="324.0" prefHeight="25.0" prefWidth="128.0" style="-fx-background-radius: 0;" AnchorPane.rightAnchor="374.0" />
+      <Label fx:id="status" layoutX="44.0" layoutY="416.0" prefHeight="38.0" prefWidth="237.0" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="head" layoutX="62.0" layoutY="28.0" text="Add Info-Movie House" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="fill5" layoutX="42.0" layoutY="355.0" text="Description" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="descript" layoutX="41.0" layoutY="382.0" prefHeight="25.0" prefWidth="128.0" style="-fx-background-radius: 0;" AnchorPane.rightAnchor="374.0" />
+      <ImageView fx:id="registerlogo" fitHeight="114.0" fitWidth="139.0" layoutX="394.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/download.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="fill6" layoutX="230.0" layoutY="96.0" text="Trailer Link" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="fill7" layoutX="231.0" layoutY="163.0" text="Cover Image" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="fill8" layoutX="236.0" layoutY="228.0" text="Reference Image 1" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="fill9" layoutX="228.0" layoutY="291.0" text="Reference Image 2" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="trailer" layoutX="230.0" layoutY="126.0" onMouseClicked="#addTrailer" prefHeight="25.0" prefWidth="128.0" style="-fx-background-radius: 0;" />
+      <Label fx:id="fill10" layoutX="231.0" layoutY="353.0" text="Movie Link" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="link" layoutX="233.0" layoutY="382.0" onMouseClicked="#addLink" prefHeight="25.0" prefWidth="128.0" style="-fx-background-radius: 0;" />
+      <TextField fx:id="but1" layoutX="233.0" layoutY="193.0" onMouseClicked="#addCover" prefHeight="25.0" prefWidth="128.0" style="-fx-background-radius: 0;" />
+      <TextField fx:id="but3" layoutX="233.0" layoutY="324.0" onAction="#addImage2" onMouseClicked="#addImage2" prefHeight="25.0" prefWidth="128.0" style="-fx-background-radius: 0;" />
+      <TextField fx:id="but2" layoutX="232.0" layoutY="255.0" onAction="#addImage1" onMouseClicked="#addImage1" prefHeight="25.0" prefWidth="128.0" style="-fx-background-radius: 0;" />
+      <Button layoutX="184.0" layoutY="479.0" mnemonicParsing="false" onAction="#signOut" text="Sign Out" />
+      <Button fx:id="delete" layoutX="319.0" layoutY="479.0" mnemonicParsing="false" onAction="#processDelete" prefHeight="25.0" prefWidth="161.0" text="Click here to remove entry" />
+   </children>
+</AnchorPane>
